@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>javascript</h1></center>
+</body>
+<script>
+    main();
+    function main()
+    {
+        sum(1,2)
+        sum(1,2,3)
+        sum(1,2,3,4)
+    }
+    function sum()
+    {
+        let add=0;
+        for(let i=0;i<arguments.length;i++)
+        {
+            add += arguments[i]
+        }
+        console.log(add);
+    }
+</script>
+</html>

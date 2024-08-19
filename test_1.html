@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>execution context</title>
+</head>
+<body>
+    <center>
+        <h1>Execution Context:</h1>
+        <h1>It is a container where memory is created for variables and javascript functions.</h1>
+    </center>
+    <script>
+        var a=10;
+        var b=20;
+        function sum(n1,n2)
+        {
+            console.log(arguments.length);
+            var res=0;
+            res=n1+n2;
+            return res;
+        }
+        var res_1=sum(a,b);
+        var res_2=sum(res_1,a);
+        console.log(res_1,res_2);
+    </script>
+</body>
+</html>
