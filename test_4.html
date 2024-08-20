@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>variable object</h1></center>
+</body>
+<script>
+    function studentDetails(id,name)
+    {
+        var institute = "jspiders";
+        let branch = "marathalli";
+        const course = "python";
+        function printDetails()
+        {
+            console.log(`stdname = ${name},stdinst = ${institute}`);
+        }
+        printDetails();
+        let welcomemsg = function()
+        {
+            console.log(`hi ${name}, welcom to ${institute}`);
+        }
+        welcomemsg();
+        
+        var greetmsg = ()=>
+        {
+            console.log(`hi ${name} congratulations`);
+        }
+        //greetmsg();
+        console.log(greetmsg);
+    }
+    studentDetails(101,'chandan');
+</script>
+</html>
